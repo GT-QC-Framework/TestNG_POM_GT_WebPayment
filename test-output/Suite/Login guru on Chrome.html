@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>TestNG:  Login guru on Chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login guru on Chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 06 17:09:04 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>198 seconds (198098 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_01_Dont_input_username_password()'><b>testcase_01_Dont_input_username_password</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>5</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.HomePageScript.testcase_01_ZaloPay()'><b>testcase_01_ZaloPay</b><br>Test class: com.payzing.testcase.HomePageScript</td>
+<td></td>
+<td>2</td>
+<td>com.payzing.testcase.HomePageScript@46d56d67</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_02_Only_Type_Input_UserName()'><b>testcase_02_Only_Type_Input_UserName</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>0</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.HomePageScript.testcase_02_ZingCard()'><b>testcase_02_ZingCard</b><br>Test class: com.payzing.testcase.HomePageScript</td>
+<td></td>
+<td>11</td>
+<td>com.payzing.testcase.HomePageScript@46d56d67</td></tr>
+<tr>
+<td title='com.payzing.testcase.HomePageScript.testcase_03_ATM_Transfer_Napas()'><b>testcase_03_ATM_Transfer_Napas</b><br>Test class: com.payzing.testcase.HomePageScript</td>
+<td></td>
+<td>23</td>
+<td>com.payzing.testcase.HomePageScript@46d56d67</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_03_Only_Type_Input_Password()'><b>testcase_03_Only_Type_Input_Password</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>0</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.HomePageScript.testcase_04_ATM_Transfer_BANK_WEB()'><b>testcase_04_ATM_Transfer_BANK_WEB</b><br>Test class: com.payzing.testcase.HomePageScript</td>
+<td></td>
+<td>39</td>
+<td>com.payzing.testcase.HomePageScript@46d56d67</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_04_Type_Invalid_Account()'><b>testcase_04_Type_Invalid_Account</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>3</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.HomePageScript.testcase_05_ATM_Transfer_ZaloPay()'><b>testcase_05_ATM_Transfer_ZaloPay</b><br>Test class: com.payzing.testcase.HomePageScript</td>
+<td></td>
+<td>25</td>
+<td>com.payzing.testcase.HomePageScript@46d56d67</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_05_Login_account_ZingID_success()'><b>testcase_05_Login_account_ZingID_success</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>4</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.HomePageScript.testcase_06_Credit_Card()'><b>testcase_06_Credit_Card</b><br>Test class: com.payzing.testcase.HomePageScript</td>
+<td></td>
+<td>23</td>
+<td>com.payzing.testcase.HomePageScript@46d56d67</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_06_select_quicklogin()'><b>testcase_06_select_quicklogin</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>0</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_07_QuickLogin_Dont_type_Username_and_password()'><b>testcase_07_QuickLogin_Dont_type_Username_and_password</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>0</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_08_QuickLogin_Only_type_Username()'><b>testcase_08_QuickLogin_Only_type_Username</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>0</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_09_QuickLogin_Only_type_Password()'><b>testcase_09_QuickLogin_Only_type_Password</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>0</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+<tr>
+<td title='com.payzing.testcase.LoginScript.testcase_10_QuickLogin_Login_account_invalid()'><b>testcase_10_QuickLogin_Login_account_invalid</b><br>Test class: com.payzing.testcase.LoginScript</td>
+<td></td>
+<td>2</td>
+<td>com.payzing.testcase.LoginScript@6767c1fc</td></tr>
+</table><p>
+</body>
+</html>

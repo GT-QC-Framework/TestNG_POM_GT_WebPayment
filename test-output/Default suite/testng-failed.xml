@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.payzing.testcase.LoginScript">
+        <methods>
+          <include name="testcase_01_Dont_input_username_password"/>
+          <include name="testcase_02_Only_Type_Input_UserName"/>
+          <include name="testcase_05_Login_account_success"/>
+          <include name="testcase_03_Only_Type_Input_Password"/>
+          <include name="testcase_04_Type_Invalid_Account"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.LoginScript -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

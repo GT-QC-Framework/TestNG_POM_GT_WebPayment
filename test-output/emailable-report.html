@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Login guru on Chrome</td><td class="numi">16</td><td class="numi">16</td><td class="numi">0</td><td class="numi">0</td><td class="numi">198,1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Login guru on Chrome &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m1"><b>testcase_01_Dont_input_username_password</b>  </a></td><td class="numi">1</td><td>1559815750781</td><td class="numi">5611</td></tr>
+<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m2"><b>testcase_01_ZaloPay</b>  </a></td><td class="numi">1</td><td>1559815795747</td><td class="numi">2381</td></tr>
+<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m3"><b>testcase_02_Only_Type_Input_UserName</b>  </a></td><td class="numi">1</td><td>1559815756393</td><td class="numi">206</td></tr>
+<tr class="passedeven"><td rowspan="2">com.payzing.testcase.HomePageScript</td><td><a href="#m4"><b>testcase_02_ZingCard</b>  </a></td><td class="numi">1</td><td>1559815802367</td><td class="numi">11134</td></tr><tr class="passedeven"><td><a href="#m5"><b>testcase_03_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1559815817820</td><td class="numi">23479</td></tr>
+<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m6"><b>testcase_03_Only_Type_Input_Password</b>  </a></td><td class="numi">1</td><td>1559815756599</td><td class="numi">213</td></tr>
+<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m7"><b>testcase_04_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1559815845595</td><td class="numi">39709</td></tr>
+<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m8"><b>testcase_04_Type_Invalid_Account</b>  </a></td><td class="numi">1</td><td>1559815756813</td><td class="numi">3241</td></tr>
+<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m9"><b>testcase_05_ATM_Transfer_ZaloPay</b>  </a></td><td class="numi">1</td><td>1559815889618</td><td class="numi">25632</td></tr>
+<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m10"><b>testcase_05_Login_account_ZingID_success</b>  </a></td><td class="numi">1</td><td>1559815760055</td><td class="numi">4842</td></tr>
+<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m11"><b>testcase_06_Credit_Card</b>  </a></td><td class="numi">1</td><td>1559815919552</td><td class="numi">23184</td></tr>
+<tr class="passedodd"><td rowspan="5">com.payzing.testcase.LoginScript</td><td><a href="#m12"><b>testcase_06_select_quicklogin</b>  </a></td><td class="numi">1</td><td>1559815764898</td><td class="numi">699</td></tr><tr class="passedodd"><td><a href="#m13"><b>testcase_07_QuickLogin_Dont_type_Username_and_password</b>  </a></td><td class="numi">1</td><td>1559815765598</td><td class="numi">110</td></tr><tr class="passedodd"><td><a href="#m14"><b>testcase_08_QuickLogin_Only_type_Username</b>  </a></td><td class="numi">1</td><td>1559815765710</td><td class="numi">213</td></tr><tr class="passedodd"><td><a href="#m15"><b>testcase_09_QuickLogin_Only_type_Password</b>  </a></td><td class="numi">1</td><td>1559815765923</td><td class="numi">182</td></tr><tr class="passedodd"><td><a href="#m16"><b>testcase_10_QuickLogin_Login_account_invalid</b>  </a></td><td class="numi">1</td><td>1559815766105</td><td class="numi">2270</td></tr>
+</table>
+<h1>Login guru on Chrome</h1>
+<h2 id="m1">com.payzing.testcase.LoginScript:testcase_09_QuickLogin_Only_type_Password</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.payzing.testcase.LoginScript:testcase_01_Dont_input_username_password</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.payzing.testcase.LoginScript:testcase_07_QuickLogin_Dont_type_Username_and_password</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.payzing.testcase.HomePageScript:testcase_06_Credit_Card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.payzing.testcase.LoginScript:testcase_04_Type_Invalid_Account</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.payzing.testcase.HomePageScript:testcase_02_ZingCard</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.payzing.testcase.HomePageScript:testcase_04_ATM_Transfer_BANK_WEB</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.payzing.testcase.LoginScript:testcase_03_Only_Type_Input_Password</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.payzing.testcase.LoginScript:testcase_06_select_quicklogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.payzing.testcase.LoginScript:testcase_05_Login_account_ZingID_success</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.payzing.testcase.HomePageScript:testcase_01_ZaloPay</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.payzing.testcase.LoginScript:testcase_08_QuickLogin_Only_type_Username</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.payzing.testcase.HomePageScript:testcase_03_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.payzing.testcase.HomePageScript:testcase_05_ATM_Transfer_ZaloPay</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.payzing.testcase.LoginScript:testcase_10_QuickLogin_Login_account_invalid</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.payzing.testcase.LoginScript:testcase_02_Only_Type_Input_UserName</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="74.0.3729.6"/>
+  <parameter name="url" value="https://pay.zing.vn"/>
+  <test name="Login guru on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="74.0.3729.6"/>
+    <parameter name="url" value="https://pay.zing.vn"/>
+    <classes>
+      <class name="com.payzing.testcase.HomePageScript">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="testcase_02_ZingCard"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript -->
+    </classes>
+  </test> <!-- Login guru on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

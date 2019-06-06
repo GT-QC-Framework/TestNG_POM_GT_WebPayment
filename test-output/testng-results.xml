@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="198098" started-at="2019-06-06T10:09:04Z" finished-at="2019-06-06T10:12:22Z">
+    <groups>
+    </groups>
+    <test name="Login guru on Chrome" duration-ms="198098" started-at="2019-06-06T10:09:04Z" finished-at="2019-06-06T10:12:22Z">
+      <class name="com.payzing.testcase.LoginScript">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="beforeClass" is-config="true" duration-ms="6130" started-at="2019-06-06T17:09:04Z" finished-at="2019-06-06T17:09:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[74.0.3729.6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://pay.zing.vn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testcase_01_Dont_input_username_password()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_01_Dont_input_username_password" duration-ms="5611" started-at="2019-06-06T17:09:10Z" finished-at="2019-06-06T17:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_01_Dont_input_username_password -->
+        <test-method status="PASS" signature="testcase_02_Only_Type_Input_UserName()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_02_Only_Type_Input_UserName" duration-ms="206" started-at="2019-06-06T17:09:16Z" finished-at="2019-06-06T17:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_02_Only_Type_Input_UserName -->
+        <test-method status="PASS" signature="testcase_03_Only_Type_Input_Password()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_03_Only_Type_Input_Password" duration-ms="213" started-at="2019-06-06T17:09:16Z" finished-at="2019-06-06T17:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_03_Only_Type_Input_Password -->
+        <test-method status="PASS" signature="testcase_04_Type_Invalid_Account()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_04_Type_Invalid_Account" duration-ms="3241" started-at="2019-06-06T17:09:16Z" finished-at="2019-06-06T17:09:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_04_Type_Invalid_Account -->
+        <test-method status="PASS" signature="testcase_05_Login_account_ZingID_success()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_05_Login_account_ZingID_success" duration-ms="4842" started-at="2019-06-06T17:09:20Z" finished-at="2019-06-06T17:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_05_Login_account_ZingID_success -->
+        <test-method status="PASS" signature="testcase_06_select_quicklogin()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_06_select_quicklogin" duration-ms="699" started-at="2019-06-06T17:09:24Z" finished-at="2019-06-06T17:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_06_select_quicklogin -->
+        <test-method status="PASS" signature="testcase_07_QuickLogin_Dont_type_Username_and_password()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_07_QuickLogin_Dont_type_Username_and_password" duration-ms="110" started-at="2019-06-06T17:09:25Z" finished-at="2019-06-06T17:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_07_QuickLogin_Dont_type_Username_and_password -->
+        <test-method status="PASS" signature="testcase_08_QuickLogin_Only_type_Username()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_08_QuickLogin_Only_type_Username" duration-ms="213" started-at="2019-06-06T17:09:25Z" finished-at="2019-06-06T17:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_08_QuickLogin_Only_type_Username -->
+        <test-method status="PASS" signature="testcase_09_QuickLogin_Only_type_Password()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_09_QuickLogin_Only_type_Password" duration-ms="182" started-at="2019-06-06T17:09:25Z" finished-at="2019-06-06T17:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_09_QuickLogin_Only_type_Password -->
+        <test-method status="PASS" signature="testcase_10_QuickLogin_Login_account_invalid()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="testcase_10_QuickLogin_Login_account_invalid" duration-ms="2270" started-at="2019-06-06T17:09:26Z" finished-at="2019-06-06T17:09:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_10_QuickLogin_Login_account_invalid -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.payzing.testcase.LoginScript@6767c1fc]" name="afterClass" is-config="true" duration-ms="661" started-at="2019-06-06T17:09:28Z" finished-at="2019-06-06T17:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.payzing.testcase.LoginScript -->
+      <class name="com.payzing.testcase.HomePageScript">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeClass" is-config="true" duration-ms="22405" started-at="2019-06-06T17:09:29Z" finished-at="2019-06-06T17:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[74.0.3729.6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://pay.zing.vn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeMethod" is-config="true" duration-ms="4306" started-at="2019-06-06T17:09:51Z" finished-at="2019-06-06T17:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_01_ZaloPay()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="testcase_01_ZaloPay" duration-ms="2381" started-at="2019-06-06T17:09:55Z" finished-at="2019-06-06T17:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_01_ZaloPay -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeMethod" is-config="true" duration-ms="4239" started-at="2019-06-06T17:09:58Z" finished-at="2019-06-06T17:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_02_ZingCard()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="testcase_02_ZingCard" duration-ms="11134" started-at="2019-06-06T17:10:02Z" finished-at="2019-06-06T17:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_02_ZingCard -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeMethod" is-config="true" duration-ms="4318" started-at="2019-06-06T17:10:13Z" finished-at="2019-06-06T17:10:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_03_ATM_Transfer_Napas()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="testcase_03_ATM_Transfer_Napas" duration-ms="23479" started-at="2019-06-06T17:10:17Z" finished-at="2019-06-06T17:10:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_03_ATM_Transfer_Napas -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeMethod" is-config="true" duration-ms="4295" started-at="2019-06-06T17:10:41Z" finished-at="2019-06-06T17:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_04_ATM_Transfer_BANK_WEB()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="testcase_04_ATM_Transfer_BANK_WEB" duration-ms="39709" started-at="2019-06-06T17:10:45Z" finished-at="2019-06-06T17:11:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_04_ATM_Transfer_BANK_WEB -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeMethod" is-config="true" duration-ms="4313" started-at="2019-06-06T17:11:25Z" finished-at="2019-06-06T17:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_05_ATM_Transfer_ZaloPay()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="testcase_05_ATM_Transfer_ZaloPay" duration-ms="25632" started-at="2019-06-06T17:11:29Z" finished-at="2019-06-06T17:11:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_05_ATM_Transfer_ZaloPay -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="beforeMethod" is-config="true" duration-ms="4301" started-at="2019-06-06T17:11:55Z" finished-at="2019-06-06T17:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testcase_06_Credit_Card()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="testcase_06_Credit_Card" duration-ms="23184" started-at="2019-06-06T17:11:59Z" finished-at="2019-06-06T17:12:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_06_Credit_Card -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.payzing.testcase.HomePageScript@46d56d67]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-06-06T17:12:22Z" finished-at="2019-06-06T17:12:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.payzing.testcase.HomePageScript -->
+    </test> <!-- Login guru on Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
