@@ -22,7 +22,7 @@ import com.payzing.ui.HomePageUI;
 
 import CommonPage.CommonTestcase;
 
-public class HomePageScript extends CommonTestcase {
+public class HomePageScript_Only_One extends CommonTestcase {
 
 	WebDriver driver;
 
@@ -36,7 +36,7 @@ public class HomePageScript extends CommonTestcase {
 
 	public void beforeClass(String browser, String version, String url) throws InterruptedException {
 
-		inititalReport("Nhutbm_Webpay_SelectPack_07062019.html");
+		inititalReport("Nhutbm_Webpay_SelectPack_No_OptionPack.html");
 
 		driver = openMultiBrowser(browser, version, url);
 
@@ -44,7 +44,7 @@ public class HomePageScript extends CommonTestcase {
 
 		loginPage.openUrl("https://pay.zing.vn/");
 
-		loginPage.inputTXT_TIMKIEMGAME("mu strongest");
+		loginPage.inputTXT_TIMKIEMGAME("tân chưởng môn");
 
 		Thread.sleep(3000);
 
@@ -89,7 +89,7 @@ public class HomePageScript extends CommonTestcase {
 		if (eleMayChu != null) {
 			homePage.clickDropDown_MayChu(eleMayChu);
 			Thread.sleep(500);
-			String locator = String.format(HomePageUI.LIST_ITEM_MAYCHU, "MUS30");
+			String locator = String.format(HomePageUI.LIST_ITEM_MAYCHU, "Lý Tầm Hoan");
 			homePage.selectDropdown_MayChu(eleMayChu, locator);
 		}
 
@@ -99,7 +99,7 @@ public class HomePageScript extends CommonTestcase {
 
 			homePage.clickDropDown_NhanVat(eleNhanVat);
 			Thread.sleep(500);
-			String locator = String.format(HomePageUI.LIST_ITEM_NHANVAT, "GiinArcher | Level: 427");
+			String locator = String.format(HomePageUI.LIST_ITEM_NHANVAT, "GiinZingIDJaeJoong");
 			homePage.selectDropdown_NhanVat(eleNhanVat, locator);
 
 		}
@@ -108,7 +108,7 @@ public class HomePageScript extends CommonTestcase {
 
 		homePage.clickBTT_XacNhan();
 
-		homePage.clickPOPUP_XacNhan();
+//		homePage.clickPOPUP_XacNhan();
 
 	}
 
@@ -116,16 +116,16 @@ public class HomePageScript extends CommonTestcase {
 
 	public void beforeMethod() throws InterruptedException {
 
-		homePage.openUrl("https://pay.zing.vn/mobile/mum/#/pay");
+		homePage.openUrl("https://pay.zing.vn/mobile/dzm2/#/pay");
 
 		Thread.sleep(1000);
 
-		List<WebElement> listPkg = driver.findElements(By.xpath("//div[@class='am-tab-panel am-active am-in']//input"));
+		List<WebElement> listPkg = driver.findElements(By.xpath("//div[contains(@class,'am-gallery-item')]//input"));
 
-		if (listPkg == null || listPkg.isEmpty()) {
-			listPkg = driver.findElements(By.xpath("//div[@class='am-tab-panel am-active']//input"));
-
-		}
+//		if (listPkg == null || listPkg.isEmpty()) {
+//			listPkg = driver.findElements(By.xpath("//div[@class='am-tab-panel am-active']//input"));
+//
+//		}
 		List<String> lstPkgId = new ArrayList();
 		for (WebElement elementList : listPkg) {
 			String idPkg = elementList.getAttribute("id");
@@ -149,7 +149,7 @@ public class HomePageScript extends CommonTestcase {
 			}
 		} while (limitPrice < 50000);// ngc lai so can
 		
-		
+		//In gia tien cua goi da chon
 //		System.out.println(limitPrice + " - " + lstPkgId.get(rndPkgId));
 
 		homePage.click("//img[@id='img" + lstPkgId.get(rndPkgId).substring(4) + "']");
@@ -380,8 +380,6 @@ public class HomePageScript extends CommonTestcase {
 
 		homePage.clickTiepTucThanhToan();
 	}
-
-
 
 	@Test
 	public void testcase_11_ATM_Transfer_BANK_WEB() throws InterruptedException {

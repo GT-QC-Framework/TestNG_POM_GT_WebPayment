@@ -84,6 +84,18 @@ public class commonFunction extends BasePage {
 		WebElement e = ele.findElement(By.xpath(locator));
 		e.click();
 	}
+	
+	//Dropdown
+	public void selectDropdown(String locator, String value)
+	{
+		List<WebElement> list = driver.findElements(By.xpath(locator));
+    	for (WebElement elementList : list) {
+			if (elementList.getText().equals(value)) {
+				elementList.click();
+				break;
+			}
+		}
+	}
 
 	public String getTextComboboxSelected(String locator) {
 		Select select = new Select(driver.findElement(By.xpath(locator)));

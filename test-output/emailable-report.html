@@ -31,54 +31,744 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Login guru on Chrome</td><td class="numi">16</td><td class="numi">16</td><td class="numi">0</td><td class="numi">0</td><td class="numi">198,1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Login guru on Chrome</td><td class="numi">51</td><td class="numi">51</td><td class="numi">0</td><td class="numi_attn">23</td><td class="numi">77.416,9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Login guru on Chrome &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="11">com.payzing.testcase.LoginScript</td><td><a href="#m1"><b>testcase_01_Dont_input_username_password</b>  </a></td><td class="numi">1</td><td>1560660279499</td><td class="numi">100726</td></tr><tr class="failedodd"><td><a href="#m2"><b>testcase_02_Only_Type_Input_UserName</b>  </a></td><td class="numi">1</td><td>1560660380238</td><td class="numi">100214</td></tr><tr class="failedodd"><td><a href="#m3"><b>testcase_03_Only_Type_Input_Password</b>  </a></td><td class="numi">1</td><td>1560660480457</td><td class="numi">100446</td></tr><tr class="failedodd"><td><a href="#m4"><b>testcase_04_Type_Invalid_Account</b>  </a></td><td class="numi">1</td><td>1560660580906</td><td class="numi">19731099</td></tr><tr class="failedodd"><td><a href="#m5"><b>testcase_05_Login_account_ZingID_success</b>  </a></td><td class="numi">1</td><td>1560680312010</td><td class="numi">55505767</td></tr><tr class="failedodd"><td><a href="#m6"><b>testcase_06_select_quicklogin</b>  </a></td><td class="numi">1</td><td>1560735817779</td><td class="numi">100208</td></tr><tr class="failedodd"><td><a href="#m7"><b>testcase_07_QuickLogin_Dont_type_Username_and_password</b>  </a></td><td class="numi">1</td><td>1560735917989</td><td class="numi">100375</td></tr><tr class="failedodd"><td><a href="#m8"><b>testcase_08_QuickLogin_Only_type_Username</b>  </a></td><td class="numi">1</td><td>1560736018366</td><td class="numi">100291</td></tr><tr class="failedodd"><td><a href="#m9"><b>testcase_09_QuickLogin_Only_type_Password</b>  </a></td><td class="numi">1</td><td>1560736118658</td><td class="numi">100335</td></tr><tr class="failedodd"><td><a href="#m10"><b>testcase_10_QuickLogin_Login_account_invalid</b>  </a></td><td class="numi">1</td><td>1560736218994</td><td class="numi">100370</td></tr><tr class="failedodd"><td><a href="#m11"><b>testcase_11_QuickLogin_Login_success</b>  </a></td><td class="numi">1</td><td>1560736319366</td><td class="numi">14</td></tr>
+<tr class="failedeven"><td rowspan="3">com.payzing.testcase.HomePageScript</td><td><a href="#m12"><b>testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</b>  </a></td><td class="numi">1</td><td>1560736454829</td><td class="numi">3899</td></tr><tr class="failedeven"><td><a href="#m13"><b>testcase_11_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1560736515164</td><td class="numi">108350</td></tr><tr class="failedeven"><td><a href="#m14"><b>testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</b>  </a></td><td class="numi">1</td><td>1560736627817</td><td class="numi">4902</td></tr>
+<tr class="failedodd"><td rowspan="3">com.payzing.testcase.HomePageScript_Only_One</td><td><a href="#m15"><b>testcase_10_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1560736793785</td><td class="numi">24911</td></tr><tr class="failedodd"><td><a href="#m16"><b>testcase_11_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1560736823010</td><td class="numi">108766</td></tr><tr class="failedodd"><td><a href="#m17"><b>testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</b>  </a></td><td class="numi">1</td><td>1560736936077</td><td class="numi">5297</td></tr>
+<tr class="failedeven"><td rowspan="6">com.payzing.testcase.HomePageScript_Game_Convert</td><td><a href="#m18"><b>testcase_13_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1560737077240</td><td class="numi">110563</td></tr><tr class="failedeven"><td><a href="#m19"><b>testcase_14_ATM_Transfer_ZaloPay_Verify_display_transactionID</b>  </a></td><td class="numi">1</td><td>1560737187807</td><td class="numi">100048</td></tr><tr class="failedeven"><td><a href="#m20"><b>testcase_15_Credit_Card_Verify_message_when_delete_price</b>  </a></td><td class="numi">1</td><td>1560737287859</td><td class="numi">100408</td></tr><tr class="failedeven"><td><a href="#m21"><b>testcase_16_Credit_Card_Verify_message_when_input_invalid_price</b>  </a></td><td class="numi">1</td><td>1560737388270</td><td class="numi">102396</td></tr><tr class="failedeven"><td><a href="#m22"><b>testcase_17_Credit_Card</b>  </a></td><td class="numi">1</td><td>1560737490670</td><td class="numi">100369</td></tr><tr class="failedeven"><td><a href="#m23"><b>testcase_18_SMS</b>  </a></td><td class="numi">1</td><td>1560737591040</td><td class="numi">100014</td></tr>
 <tr><th colspan="4">Login guru on Chrome &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m1"><b>testcase_01_Dont_input_username_password</b>  </a></td><td class="numi">1</td><td>1559815750781</td><td class="numi">5611</td></tr>
-<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m2"><b>testcase_01_ZaloPay</b>  </a></td><td class="numi">1</td><td>1559815795747</td><td class="numi">2381</td></tr>
-<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m3"><b>testcase_02_Only_Type_Input_UserName</b>  </a></td><td class="numi">1</td><td>1559815756393</td><td class="numi">206</td></tr>
-<tr class="passedeven"><td rowspan="2">com.payzing.testcase.HomePageScript</td><td><a href="#m4"><b>testcase_02_ZingCard</b>  </a></td><td class="numi">1</td><td>1559815802367</td><td class="numi">11134</td></tr><tr class="passedeven"><td><a href="#m5"><b>testcase_03_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1559815817820</td><td class="numi">23479</td></tr>
-<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m6"><b>testcase_03_Only_Type_Input_Password</b>  </a></td><td class="numi">1</td><td>1559815756599</td><td class="numi">213</td></tr>
-<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m7"><b>testcase_04_ATM_Transfer_BANK_WEB</b>  </a></td><td class="numi">1</td><td>1559815845595</td><td class="numi">39709</td></tr>
-<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m8"><b>testcase_04_Type_Invalid_Account</b>  </a></td><td class="numi">1</td><td>1559815756813</td><td class="numi">3241</td></tr>
-<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m9"><b>testcase_05_ATM_Transfer_ZaloPay</b>  </a></td><td class="numi">1</td><td>1559815889618</td><td class="numi">25632</td></tr>
-<tr class="passedodd"><td rowspan="1">com.payzing.testcase.LoginScript</td><td><a href="#m10"><b>testcase_05_Login_account_ZingID_success</b>  </a></td><td class="numi">1</td><td>1559815760055</td><td class="numi">4842</td></tr>
-<tr class="passedeven"><td rowspan="1">com.payzing.testcase.HomePageScript</td><td><a href="#m11"><b>testcase_06_Credit_Card</b>  </a></td><td class="numi">1</td><td>1559815919552</td><td class="numi">23184</td></tr>
-<tr class="passedodd"><td rowspan="5">com.payzing.testcase.LoginScript</td><td><a href="#m12"><b>testcase_06_select_quicklogin</b>  </a></td><td class="numi">1</td><td>1559815764898</td><td class="numi">699</td></tr><tr class="passedodd"><td><a href="#m13"><b>testcase_07_QuickLogin_Dont_type_Username_and_password</b>  </a></td><td class="numi">1</td><td>1559815765598</td><td class="numi">110</td></tr><tr class="passedodd"><td><a href="#m14"><b>testcase_08_QuickLogin_Only_type_Username</b>  </a></td><td class="numi">1</td><td>1559815765710</td><td class="numi">213</td></tr><tr class="passedodd"><td><a href="#m15"><b>testcase_09_QuickLogin_Only_type_Password</b>  </a></td><td class="numi">1</td><td>1559815765923</td><td class="numi">182</td></tr><tr class="passedodd"><td><a href="#m16"><b>testcase_10_QuickLogin_Login_account_invalid</b>  </a></td><td class="numi">1</td><td>1559815766105</td><td class="numi">2270</td></tr>
+<tr class="passedodd"><td rowspan="15">com.payzing.testcase.LoginScript</td><td><a href="#m24"><b>testcase_12_Login_By_Zalo</b>  </a></td><td class="numi">1</td><td>1560736319382</td><td class="numi">2074</td></tr><tr class="passedodd"><td><a href="#m25"><b>testcase_13_Login_By_Facebook</b>  </a></td><td class="numi">1</td><td>1560736321458</td><td class="numi">2024</td></tr><tr class="passedodd"><td><a href="#m26"><b>testcase_14_Role_Ingame_Verify_display_srceen_login</b>  </a></td><td class="numi">1</td><td>1560736323483</td><td class="numi">10005</td></tr><tr class="passedodd"><td><a href="#m27"><b>testcase_15_Login_By_Name_Ingame_Verify_message_when_null_information</b>  </a></td><td class="numi">1</td><td>1560736333491</td><td class="numi">1647</td></tr><tr class="passedodd"><td><a href="#m28"><b>testcase_16_Login_By_Name_Ingame_Verify_message_when_only_input_Name</b>  </a></td><td class="numi">1</td><td>1560736335139</td><td class="numi">2800</td></tr><tr class="passedodd"><td><a href="#m29"><b>testcase_17_Login_By_Name_Ingame_Verify_message_when_only_select_Server</b>  </a></td><td class="numi">1</td><td>1560736337941</td><td class="numi">3922</td></tr><tr class="passedodd"><td><a href="#m30"><b>testcase_18_Login_By_Name_Ingame_Verify_message_when_input_invalid_information</b>  </a></td><td class="numi">1</td><td>1560736341864</td><td class="numi">8182</td></tr><tr class="passedodd"><td><a href="#m31"><b>testcase_19_Login_By_Name_Ingame_Verify_message_when_input_roleID</b>  </a></td><td class="numi">1</td><td>1560736350047</td><td class="numi">4336</td></tr><tr class="passedodd"><td><a href="#m32"><b>testcase_20_Login_By_Name_Ingame_Verify_login_success</b>  </a></td><td class="numi">1</td><td>1560736354384</td><td class="numi">5011</td></tr><tr class="passedodd"><td><a href="#m33"><b>testcase_21_Login_By_Role_Ingame_Verify_message_when_null_information</b>  </a></td><td class="numi">1</td><td>1560736359395</td><td class="numi">9908</td></tr><tr class="passedodd"><td><a href="#m34"><b>testcase_22_Login_By_Role_Ingame_Verify_message_when_only_input_Name</b>  </a></td><td class="numi">1</td><td>1560736369304</td><td class="numi">2815</td></tr><tr class="passedodd"><td><a href="#m35"><b>testcase_23_Login_By_Role_Ingame_Verify_message_when_only_select_Server</b>  </a></td><td class="numi">1</td><td>1560736372129</td><td class="numi">3921</td></tr><tr class="passedodd"><td><a href="#m36"><b>testcase_24_Login_By_Role_Ingame_Verify_message_when_input_invalid_information</b>  </a></td><td class="numi">1</td><td>1560736376051</td><td class="numi">7179</td></tr><tr class="passedodd"><td><a href="#m37"><b>testcase_25_Login_By_Role_Ingame_Verify_message_when_input_roleID</b>  </a></td><td class="numi">1</td><td>1560736383230</td><td class="numi">4403</td></tr><tr class="passedodd"><td><a href="#m38"><b>testcase_26_Login_By_Role_Ingame_Verify_login_success</b>  </a></td><td class="numi">1</td><td>1560736387633</td><td class="numi">5026</td></tr>
+<tr class="passedeven"><td rowspan="12">com.payzing.testcase.HomePageScript</td><td><a href="#m39"><b>testcase_01_ZaloPay_Verify_display_QR_code</b>  </a></td><td class="numi">1</td><td>1560736417758</td><td class="numi">2344</td></tr><tr class="passedeven"><td><a href="#m40"><b>testcase_02_ZingCard_Verify_display_form_input_information_card</b>  </a></td><td class="numi">1</td><td>1560736424412</td><td class="numi">100</td></tr><tr class="passedeven"><td><a href="#m41"><b>testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</b>  </a></td><td class="numi">1</td><td>1560736428765</td><td class="numi">814</td></tr><tr class="passedeven"><td><a href="#m42"><b>testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</b>  </a></td><td class="numi">1</td><td>1560736433841</td><td class="numi">2422</td></tr><tr class="passedeven"><td><a href="#m43"><b>testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</b>  </a></td><td class="numi">1</td><td>1560736440542</td><td class="numi">2388</td></tr><tr class="passedeven"><td><a href="#m44"><b>testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</b>  </a></td><td class="numi">1</td><td>1560736447171</td><td class="numi">3398</td></tr><tr class="passedeven"><td><a href="#m45"><b>testcase_08_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1560736462984</td><td class="numi">6818</td></tr><tr class="passedeven"><td><a href="#m46"><b>testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</b>  </a></td><td class="numi">1</td><td>1560736474564</td><td class="numi">7297</td></tr><tr class="passedeven"><td><a href="#m47"><b>testcase_10_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1560736486754</td><td class="numi">24132</td></tr><tr class="passedeven"><td><a href="#m48"><b>testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</b>  </a></td><td class="numi">1</td><td>1560736637043</td><td class="numi">24605</td></tr><tr class="passedeven"><td><a href="#m49"><b>testcase_14_Credit_Card</b>  </a></td><td class="numi">1</td><td>1560736665900</td><td class="numi">24138</td></tr><tr class="passedeven"><td><a href="#m50"><b>testcase_15_SMS</b>  </a></td><td class="numi">1</td><td>1560736694325</td><td class="numi">4379</td></tr>
+<tr class="passedodd"><td rowspan="12">com.payzing.testcase.HomePageScript_Only_One</td><td><a href="#m51"><b>testcase_01_ZaloPay_Verify_display_QR_code</b>  </a></td><td class="numi">1</td><td>1560736723518</td><td class="numi">2804</td></tr><tr class="passedodd"><td><a href="#m52"><b>testcase_02_ZingCard_Verify_display_form_input_information_card</b>  </a></td><td class="numi">1</td><td>1560736730534</td><td class="numi">116</td></tr><tr class="passedodd"><td><a href="#m53"><b>testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</b>  </a></td><td class="numi">1</td><td>1560736734890</td><td class="numi">815</td></tr><tr class="passedodd"><td><a href="#m54"><b>testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</b>  </a></td><td class="numi">1</td><td>1560736739934</td><td class="numi">2436</td></tr><tr class="passedodd"><td><a href="#m55"><b>testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</b>  </a></td><td class="numi">1</td><td>1560736746690</td><td class="numi">2375</td></tr><tr class="passedodd"><td><a href="#m56"><b>testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</b>  </a></td><td class="numi">1</td><td>1560736753355</td><td class="numi">3926</td></tr><tr class="passedodd"><td><a href="#m57"><b>testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</b>  </a></td><td class="numi">1</td><td>1560736761505</td><td class="numi">3925</td></tr><tr class="passedodd"><td><a href="#m58"><b>testcase_08_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1560736769730</td><td class="numi">6839</td></tr><tr class="passedodd"><td><a href="#m59"><b>testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</b>  </a></td><td class="numi">1</td><td>1560736781162</td><td class="numi">7452</td></tr><tr class="passedodd"><td><a href="#m60"><b>testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</b>  </a></td><td class="numi">1</td><td>1560736945673</td><td class="numi">24817</td></tr><tr class="passedodd"><td><a href="#m61"><b>testcase_14_Credit_Card</b>  </a></td><td class="numi">1</td><td>1560736974813</td><td class="numi">24393</td></tr><tr class="passedodd"><td><a href="#m62"><b>testcase_15_SMS</b>  </a></td><td class="numi">1</td><td>1560737003483</td><td class="numi">5345</td></tr>
+<tr class="passedeven"><td rowspan="12">com.payzing.testcase.HomePageScript_Game_Convert</td><td><a href="#m63"><b>testcase_01_ZaloPay_Verify_message_when_delete_price</b>  </a></td><td class="numi">1</td><td>1560737023509</td><td class="numi">1117</td></tr><tr class="passedeven"><td><a href="#m64"><b>testcase_02_ZaloPay_Verify_message_when_input_invalid_price</b>  </a></td><td class="numi">1</td><td>1560737024627</td><td class="numi">4571</td></tr><tr class="passedeven"><td><a href="#m65"><b>testcase_03_ZaloPay_Verify_message_when_input_valid_price</b>  </a></td><td class="numi">1</td><td>1560737029199</td><td class="numi">3418</td></tr><tr class="passedeven"><td><a href="#m66"><b>testcase_04_ZingCard_Verify_display_form_input_information_card</b>  </a></td><td class="numi">1</td><td>1560737032618</td><td class="numi">1108</td></tr><tr class="passedeven"><td><a href="#m67"><b>testcase_05_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</b>  </a></td><td class="numi">1</td><td>1560737033727</td><td class="numi">1171</td></tr><tr class="passedeven"><td><a href="#m68"><b>testcase_06_ZingCard_Verify_display_message_when_only_input_Seri</b>  </a></td><td class="numi">1</td><td>1560737034898</td><td class="numi">2781</td></tr><tr class="passedeven"><td><a href="#m69"><b>testcase_07_ZingCard_Verify_display_message_when_only_input_Pin</b>  </a></td><td class="numi">1</td><td>1560737037679</td><td class="numi">3858</td></tr><tr class="passedeven"><td><a href="#m70"><b>testcase_08_ZingCard_Verify_display_message_when_input_card_invalid</b>  </a></td><td class="numi">1</td><td>1560737041538</td><td class="numi">2925</td></tr><tr class="passedeven"><td><a href="#m71"><b>testcase_09_ZingCard_Verify_display_message_when_input_card_had_used</b>  </a></td><td class="numi">1</td><td>1560737044464</td><td class="numi">3423</td></tr><tr class="passedeven"><td><a href="#m72"><b>testcase_10_ATM_Verify_message_when_delete_price</b>  </a></td><td class="numi">1</td><td>1560737047887</td><td class="numi">734</td></tr><tr class="passedeven"><td><a href="#m73"><b>testcase_11_ATM_Verify_message_when_input_invalid_price</b>  </a></td><td class="numi">1</td><td>1560737048621</td><td class="numi">3538</td></tr><tr class="passedeven"><td><a href="#m74"><b>testcase_12_ATM_Transfer_Napas</b>  </a></td><td class="numi">1</td><td>1560737052159</td><td class="numi">25081</td></tr>
 </table>
 <h1>Login guru on Chrome</h1>
-<h2 id="m1">com.payzing.testcase.LoginScript:testcase_09_QuickLogin_Only_type_Password</h2>
+<h2 id="m1">com.payzing.testcase.HomePageScript_Game_Convert:testcase_14_ATM_Transfer_ZaloPay_Verify_display_transactionID</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id=&apos;txtpaymentMethodbank&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_ATM(HomePage.java:165)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_14_ATM_Transfer_ZaloPay_Verify_display_transactionID(HomePageScript_Game_Convert.java:494)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //h4[@id=&apos;txtpaymentMethodbank&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_ATM(HomePage.java:165)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_14_ATM_Transfer_ZaloPay_Verify_display_transactionID(HomePageScript_Game_Convert.java:494)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.payzing.testcase.LoginScript:testcase_01_Dont_input_username_password</h2>
+<h2 id="m2">com.payzing.testcase.HomePageScript:testcase_11_ATM_Transfer_BANK_WEB</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@class,&apos;back&apos;)] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT(HomePage.java:334)
+<br/>at com.payzing.testcase.HomePageScript.testcase_11_ATM_Transfer_BANK_WEB(HomePageScript.java:405)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //a[contains(@class,&apos;back&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT(HomePage.java:334)
+<br/>at com.payzing.testcase.HomePageScript.testcase_11_ATM_Transfer_BANK_WEB(HomePageScript.java:405)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.payzing.testcase.LoginScript:testcase_07_QuickLogin_Dont_type_Username_and_password</h2>
+<h2 id="m3">com.payzing.testcase.HomePageScript_Only_One:testcase_11_ATM_Transfer_BANK_WEB</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@class,&apos;back&apos;)] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT(HomePage.java:334)
+<br/>at com.payzing.testcase.HomePageScript_Only_One.testcase_11_ATM_Transfer_BANK_WEB(HomePageScript_Only_One.java:403)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //a[contains(@class,&apos;back&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT(HomePage.java:334)
+<br/>at com.payzing.testcase.HomePageScript_Only_One.testcase_11_ATM_Transfer_BANK_WEB(HomePageScript_Only_One.java:403)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.payzing.testcase.HomePageScript:testcase_06_Credit_Card</h2>
+<h2 id="m4">com.payzing.testcase.LoginScript:testcase_07_QuickLogin_Dont_type_Username_and_password</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //button[@id=&apos;login_submit_btn&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.clickBTT_DangNhap(LogInPage.java:19)
+<br/>at com.payzing.testcase.LoginScript.testcase_07_QuickLogin_Dont_type_Username_and_password(LoginScript.java:190)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //button[@id=&apos;login_submit_btn&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.clickBTT_DangNhap(LogInPage.java:19)
+<br/>at com.payzing.testcase.LoginScript.testcase_07_QuickLogin_Dont_type_Username_and_password(LoginScript.java:190)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.payzing.testcase.LoginScript:testcase_04_Type_Invalid_Account</h2>
+<h2 id="m5">com.payzing.testcase.LoginScript:testcase_11_QuickLogin_Login_success</h2>
+<div style="padding-left:3em">
+<p>javascript error: $ is not defined
+  (Session info: chrome=75.0.3770.90)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49224}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
+Session ID: 6ed17765e7e5a7f99238840bee1fd845</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:482)
+<br/>at CommonPage.commonFunction.executeScriptBrowser(commonFunction.java:272)
+<br/>at com.payzing.actions.LogInPage.clearByJs(LogInPage.java:53)
+<br/>at com.payzing.testcase.LoginScript.testcase_11_QuickLogin_Login_success(LoginScript.java:246)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.payzing.testcase.HomePageScript:testcase_02_ZingCard</h2>
+<h2 id="m6">com.payzing.testcase.LoginScript:testcase_03_Only_Type_Input_Password</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;p&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Password_TXT(LogInPage.java:42)
+<br/>at com.payzing.testcase.LoginScript.testcase_03_Only_Type_Input_Password(LoginScript.java:84)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;p&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Password_TXT(LogInPage.java:42)
+<br/>at com.payzing.testcase.LoginScript.testcase_03_Only_Type_Input_Password(LoginScript.java:84)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.payzing.testcase.HomePageScript:testcase_04_ATM_Transfer_BANK_WEB</h2>
+<h2 id="m7">com.payzing.testcase.HomePageScript_Game_Convert:testcase_16_Credit_Card_Verify_message_when_input_invalid_price</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;txtAmountDynamicInputcredit&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.inputSoTienThanhToan_TXT_CreditCard(HomePage.java:353)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_16_Credit_Card_Verify_message_when_input_invalid_price(HomePageScript_Game_Convert.java:585)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;txtAmountDynamicInputcredit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.inputSoTienThanhToan_TXT_CreditCard(HomePage.java:353)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_16_Credit_Card_Verify_message_when_input_invalid_price(HomePageScript_Game_Convert.java:585)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">com.payzing.testcase.LoginScript:testcase_03_Only_Type_Input_Password</h2>
+<h2 id="m8">com.payzing.testcase.HomePageScript_Game_Convert:testcase_18_SMS</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id=&apos;txtpaymentMethodsms&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_SMS_Game_Convert(HomePage.java:426)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_18_SMS(HomePageScript_Game_Convert.java:674)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //h4[@id=&apos;txtpaymentMethodsms&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_SMS_Game_Convert(HomePage.java:426)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_18_SMS(HomePageScript_Game_Convert.java:674)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">com.payzing.testcase.LoginScript:testcase_06_select_quicklogin</h2>
+<h2 id="m9">com.payzing.testcase.HomePageScript_Game_Convert:testcase_13_ATM_Transfer_BANK_WEB</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@class,&apos;back&apos;)] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT(HomePage.java:334)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_13_ATM_Transfer_BANK_WEB(HomePageScript_Game_Convert.java:481)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //a[contains(@class,&apos;back&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT(HomePage.java:334)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_13_ATM_Transfer_BANK_WEB(HomePageScript_Game_Convert.java:481)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">com.payzing.testcase.LoginScript:testcase_05_Login_account_ZingID_success</h2>
+<h2 id="m10">com.payzing.testcase.LoginScript:testcase_10_QuickLogin_Login_account_invalid</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;u&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_10_QuickLogin_Login_account_invalid(LoginScript.java:229)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;u&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_10_QuickLogin_Login_account_invalid(LoginScript.java:229)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">com.payzing.testcase.HomePageScript:testcase_01_ZaloPay</h2>
+<h2 id="m11">com.payzing.testcase.HomePageScript:testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</h2>
+<div style="padding-left:3em">
+<p>expected [Thẻ đã được sử dụng, vui lòng không dùng lại nhiều lần!] but found [Thẻ đã được sử dụng, giao dịch thất bại!]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at CommonPage.CommonTestcase.verifyEqual(CommonTestcase.java:59)
+<br/>at com.payzing.testcase.HomePageScript.testcase_07_ZingCard_Verify_display_message_when_input_card_had_used(HomePageScript.java:290)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">com.payzing.testcase.LoginScript:testcase_08_QuickLogin_Only_type_Username</h2>
+<h2 id="m12">com.payzing.testcase.HomePageScript_Only_One:testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;span data-bind=&quot;text: gtCore.mess.ContinutePayment&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 234). Other element would receive the click: &lt;div id=&quot;preloader-background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.90)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60015}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
+Session ID: df161d5c89108494a9eaf50dfc651f2f</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at CommonPage.commonFunction.click(commonFunction.java:49)
+<br/>at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+<br/>at com.payzing.testcase.HomePageScript_Only_One.testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card(HomePageScript_Only_One.java:434)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">com.payzing.testcase.HomePageScript:testcase_03_ATM_Transfer_Napas</h2>
+<h2 id="m13">com.payzing.testcase.HomePageScript_Game_Convert:testcase_15_Credit_Card_Verify_message_when_delete_price</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //h4[@id=&apos;txtpaymentMethodcredit&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_CreditCard(HomePage.java:341)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_15_Credit_Card_Verify_message_when_delete_price(HomePageScript_Game_Convert.java:571)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //h4[@id=&apos;txtpaymentMethodcredit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clickPhuongThuc_CreditCard(HomePage.java:341)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_15_Credit_Card_Verify_message_when_delete_price(HomePageScript_Game_Convert.java:571)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">com.payzing.testcase.HomePageScript:testcase_05_ATM_Transfer_ZaloPay</h2>
+<h2 id="m14">com.payzing.testcase.HomePageScript_Game_Convert:testcase_17_Credit_Card</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;txtAmountDynamicInputcredit&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clearSoTienThanhToan_TXT_CreditCard(HomePage.java:359)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_17_Credit_Card(HomePageScript_Game_Convert.java:628)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;txtAmountDynamicInputcredit&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.HomePage.clearSoTienThanhToan_TXT_CreditCard(HomePage.java:359)
+<br/>at com.payzing.testcase.HomePageScript_Game_Convert.testcase_17_Credit_Card(HomePageScript_Game_Convert.java:628)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">com.payzing.testcase.LoginScript:testcase_10_QuickLogin_Login_account_invalid</h2>
+<h2 id="m15">com.payzing.testcase.HomePageScript_Only_One:testcase_10_ATM_Transfer_Napas</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;span data-bind=&quot;text: gtCore.mess.ContinutePayment&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 269). Other element would receive the click: &lt;div id=&quot;preloader-background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.90)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60015}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
+Session ID: df161d5c89108494a9eaf50dfc651f2f</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at CommonPage.commonFunction.click(commonFunction.java:49)
+<br/>at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+<br/>at com.payzing.testcase.HomePageScript_Only_One.testcase_10_ATM_Transfer_Napas(HomePageScript_Only_One.java:381)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">com.payzing.testcase.LoginScript:testcase_02_Only_Type_Input_UserName</h2>
+<h2 id="m16">com.payzing.testcase.LoginScript:testcase_08_QuickLogin_Only_type_Username</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;u&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_08_QuickLogin_Only_type_Username(LoginScript.java:200)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;u&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_08_QuickLogin_Only_type_Username(LoginScript.java:200)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.payzing.testcase.LoginScript:testcase_01_Dont_input_username_password</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type=&apos;text&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.inputTXT_TIMKIEMGAME(LogInPage.java:63)
+<br/>at com.payzing.testcase.LoginScript.testcase_01_Dont_input_username_password(LoginScript.java:54)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@type=&apos;text&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.inputTXT_TIMKIEMGAME(LogInPage.java:63)
+<br/>at com.payzing.testcase.LoginScript.testcase_01_Dont_input_username_password(LoginScript.java:54)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.payzing.testcase.LoginScript:testcase_09_QuickLogin_Only_type_Password</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;p&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Password_TXT(LogInPage.java:42)
+<br/>at com.payzing.testcase.LoginScript.testcase_09_QuickLogin_Only_type_Password(LoginScript.java:215)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;p&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Password_TXT(LogInPage.java:42)
+<br/>at com.payzing.testcase.LoginScript.testcase_09_QuickLogin_Only_type_Password(LoginScript.java:215)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.payzing.testcase.LoginScript:testcase_06_select_quicklogin</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //a[@id=&apos;other_email&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.clickQuickLogin_Icon(LogInPage.java:79)
+<br/>at com.payzing.testcase.LoginScript.testcase_06_select_quicklogin(LoginScript.java:182)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //a[@id=&apos;other_email&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.clickQuickLogin_Icon(LogInPage.java:79)
+<br/>at com.payzing.testcase.LoginScript.testcase_06_select_quicklogin(LoginScript.java:182)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.payzing.testcase.LoginScript:testcase_04_Type_Invalid_Account</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;u&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_04_Type_Invalid_Account(LoginScript.java:98)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;u&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_04_Type_Invalid_Account(LoginScript.java:98)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.payzing.testcase.LoginScript:testcase_02_Only_Type_Input_UserName</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;u&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_02_Only_Type_Input_UserName(LoginScript.java:70)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;u&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_02_Only_Type_Input_UserName(LoginScript.java:70)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.payzing.testcase.LoginScript:testcase_05_Login_account_ZingID_success</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;u&apos;] (tried for 100 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_05_Login_account_ZingID_success(LoginScript.java:119)
+<br/>21 lines not shown
+<p>Caused by Cannot locate an element using By.xpath: //input[@id=&apos;u&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+<br/>at java.util.Optional.orElseThrow(Optional.java:290)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at CommonPage.commonFunction.waitVisible(commonFunction.java:307)
+<br/>at com.payzing.actions.LogInPage.input_Username_TXT(LogInPage.java:31)
+<br/>at com.payzing.testcase.LoginScript.testcase_05_Login_account_ZingID_success(LoginScript.java:119)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.payzing.testcase.HomePageScript:testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card</h2>
+<div style="padding-left:3em">
+<p>element click intercepted: Element &lt;span data-bind=&quot;text: gtCore.mess.ContinutePayment&quot;&gt;...&lt;/span&gt; is not clickable at point (767, 234). Other element would receive the click: &lt;div id=&quot;preloader-background&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.90)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;NHUTBM&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\LAP121~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59849}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
+Session ID: 97c3d0f192e8962babed8a5a08f216de</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at CommonPage.commonFunction.click(commonFunction.java:49)
+<br/>at com.payzing.actions.HomePage.clickTiepTucThanhToan(HomePage.java:111)
+<br/>at com.payzing.testcase.HomePageScript.testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card(HomePageScript.java:436)
+<br/>21 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.payzing.testcase.LoginScript:testcase_15_Login_By_Name_Ingame_Verify_message_when_null_information</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.payzing.testcase.HomePageScript:testcase_15_SMS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.payzing.testcase.LoginScript:testcase_19_Login_By_Name_Ingame_Verify_message_when_input_roleID</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.payzing.testcase.HomePageScript_Game_Convert:testcase_06_ZingCard_Verify_display_message_when_only_input_Seri</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.payzing.testcase.HomePageScript_Game_Convert:testcase_08_ZingCard_Verify_display_message_when_input_card_invalid</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.payzing.testcase.HomePageScript:testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.payzing.testcase.HomePageScript_Only_One:testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.payzing.testcase.HomePageScript:testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.payzing.testcase.LoginScript:testcase_26_Login_By_Role_Ingame_Verify_login_success</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.payzing.testcase.HomePageScript_Game_Convert:testcase_04_ZingCard_Verify_display_form_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.payzing.testcase.HomePageScript_Game_Convert:testcase_12_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.payzing.testcase.HomePageScript:testcase_02_ZingCard_Verify_display_form_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.payzing.testcase.HomePageScript_Only_One:testcase_02_ZingCard_Verify_display_form_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.payzing.testcase.HomePageScript_Only_One:testcase_04_ZingCard_Verify_display_message_when_only_input_Seri</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">com.payzing.testcase.HomePageScript_Game_Convert:testcase_01_ZaloPay_Verify_message_when_delete_price</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">com.payzing.testcase.HomePageScript:testcase_14_Credit_Card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">com.payzing.testcase.LoginScript:testcase_14_Role_Ingame_Verify_display_srceen_login</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">com.payzing.testcase.HomePageScript_Game_Convert:testcase_05_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">com.payzing.testcase.HomePageScript_Game_Convert:testcase_07_ZingCard_Verify_display_message_when_only_input_Pin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">com.payzing.testcase.LoginScript:testcase_13_Login_By_Facebook</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">com.payzing.testcase.HomePageScript:testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">com.payzing.testcase.HomePageScript:testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">com.payzing.testcase.HomePageScript_Only_One:testcase_15_SMS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">com.payzing.testcase.HomePageScript_Only_One:testcase_05_ZingCard_Verify_display_message_when_only_input_Pin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">com.payzing.testcase.HomePageScript:testcase_10_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">com.payzing.testcase.LoginScript:testcase_20_Login_By_Name_Ingame_Verify_login_success</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">com.payzing.testcase.LoginScript:testcase_12_Login_By_Zalo</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">com.payzing.testcase.LoginScript:testcase_18_Login_By_Name_Ingame_Verify_message_when_input_invalid_information</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">com.payzing.testcase.HomePageScript_Game_Convert:testcase_03_ZaloPay_Verify_message_when_input_valid_price</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">com.payzing.testcase.HomePageScript_Only_One:testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">com.payzing.testcase.HomePageScript:testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">com.payzing.testcase.HomePageScript_Game_Convert:testcase_09_ZingCard_Verify_display_message_when_input_card_had_used</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">com.payzing.testcase.HomePageScript_Only_One:testcase_06_ZingCard_Verify_display_message_when_input_card_invalid</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">com.payzing.testcase.LoginScript:testcase_17_Login_By_Name_Ingame_Verify_message_when_only_select_Server</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">com.payzing.testcase.HomePageScript_Only_One:testcase_07_ZingCard_Verify_display_message_when_input_card_had_used</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">com.payzing.testcase.HomePageScript_Only_One:testcase_14_Credit_Card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">com.payzing.testcase.HomePageScript_Game_Convert:testcase_10_ATM_Verify_message_when_delete_price</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">com.payzing.testcase.HomePageScript:testcase_01_ZaloPay_Verify_display_QR_code</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">com.payzing.testcase.HomePageScript_Only_One:testcase_08_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">com.payzing.testcase.HomePageScript_Only_One:testcase_01_ZaloPay_Verify_display_QR_code</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">com.payzing.testcase.HomePageScript:testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">com.payzing.testcase.HomePageScript:testcase_08_ATM_Transfer_Napas</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">com.payzing.testcase.LoginScript:testcase_21_Login_By_Role_Ingame_Verify_message_when_null_information</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">com.payzing.testcase.LoginScript:testcase_16_Login_By_Name_Ingame_Verify_message_when_only_input_Name</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">com.payzing.testcase.HomePageScript_Game_Convert:testcase_11_ATM_Verify_message_when_input_invalid_price</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">com.payzing.testcase.LoginScript:testcase_25_Login_By_Role_Ingame_Verify_message_when_input_roleID</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">com.payzing.testcase.LoginScript:testcase_22_Login_By_Role_Ingame_Verify_message_when_only_input_Name</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">com.payzing.testcase.HomePageScript_Only_One:testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">com.payzing.testcase.LoginScript:testcase_24_Login_By_Role_Ingame_Verify_message_when_input_invalid_information</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">com.payzing.testcase.LoginScript:testcase_23_Login_By_Role_Ingame_Verify_message_when_only_select_Server</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">com.payzing.testcase.HomePageScript_Game_Convert:testcase_02_ZaloPay_Verify_message_when_input_invalid_price</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

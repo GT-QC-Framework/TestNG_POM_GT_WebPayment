@@ -34,6 +34,8 @@ public class HomePageUI {
 	
 	public static final String POPUP_XACNHAN_PACKAGE = "//span[@id='popupProductConfirm']";
 	
+	public static final String OPTION_ZaloPay_SOTIENTHANHTOAN_TXT  = "//input[@id='txtAmountDynamicInputzalopay']";
+	
 	public static final String ZALOPAY_XACNHAN_BTT = "//button[@id='btnSubmitPaymentElementzalopay']";
 
 	public static final String ZALOPAY_KIEMTRAKETQUAGIAODICH_BTT = "//button[@id='btnGetPaymentResult']//span[contains(text(),'Kiểm tra kết quả')]";
@@ -56,6 +58,8 @@ public class HomePageUI {
 	
 	public static final String OPTION_ATM  = "//h4[@id='txtpaymentMethodbank']";
 	
+	public static final String OPTION_ATM_SOTIENTHANHTOAN_TXT  = "//input[@id='txtAmountDynamicInputbank']";
+
 	public static final String ATM_TRANS_GATE_NAPAS  = "//div[@id='1tpb']";
 		
 	public static final String ATM_TRANS_GATE_ZALOPAY  = "//div[@id='1vtb']";
@@ -98,6 +102,8 @@ public class HomePageUI {
 	
 	public static final String OPTION_CREDITCARD  = "//h4[@id='txtpaymentMethodcredit']";
 	
+	public static final String OPTION_CREDITCARD_SOTIENTHANHTOAN_TXT  = "//input[@id='txtAmountDynamicInputcredit']";
+
 	public static final String CREDIT_XACNHAN_BTT  = "//button[@id='btnSubmitPaymentElementcredit']";
 	
 	public static final String CREDIT_FORM_SOTHE_TXT  = "//input[@id='inputCCCardNo']";
@@ -115,6 +121,16 @@ public class HomePageUI {
 	public static final String CREDIT_FORM_HUY_ICON_HUY_BTT  = "//button[contains(text(),'Hủy')]";
 	
 	public static final String CREDIT_FORM_HUY_ICON_XACNHA_BTT  = "//button[contains(text(),'Xác nhận')]";
+	
+	public static final String OPTION_SMS_GAME_CONVERT  = "//h4[@id='txtpaymentMethodsms']";
+	
+	public static final String HREF_NAPBANGSMS  = "//a[contains(text(),'SMS')]";
+	
+	public static final String SMS_DROPDOWN_SOTIENTHANHTOAN  = "//select[@id='amountPmcListsms']";
+	
+	public static final String SMS_DROPDOWN_OPTION_SOTIENTHANHTOAN  = "//select[@id='amountPmcListsms']/option";
+
+	public static final String SMS_BTT_XACNHAN  = "//button[@id='btnSubmitPaymentElementsms']";
 
 
 	

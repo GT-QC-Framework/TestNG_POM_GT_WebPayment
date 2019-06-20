@@ -39,5 +39,28 @@ public class LogInPageUI {
 	
 	public static final String THOAT_BTT = "//div[contains(@class,'header-right')]";
 
+	public static final String ZALO_ICON = "//a[@id='other_zalo']";
+	
+	public static final String FACEBOOK_ICON = "//a[@id='other_facebook']";
+	
+	public static final String ID_NHANVAT_BTT = "//div[@id='login_link']";
+	
+	public static final String IDNHANVAT_FORM_DROPDOWN_MAYCHU = "//button[@type='button']";
+	
+	public static final String IDNHANVAT_FORM_DROPDOWN_OPTION_MAYCHU = "//li[@data-group]//span";
 
+	public static final String IDNHANVAT_FORM_TXT_NHANVAT = "//input[@id='authTxtRoleInfo']";
+	
+	public static final String IDNHANVAT_FORM_BTT_XACNHAN = "//button[@id='authBtnSubmit']";
+	
+	public static final String IDNHANVAT_FORM_MESS_ERROR = "//div[@id='authTextErrMessage']";
+	
+	public static final String IDNHANVAT_FORM_BTT_ROLE_ID = "//label[contains(text(),'role ID')]";
+	
+	public static final String IDNHANVAT_FORM_POPUP_BTT_XACNHAN = "//div[contains(@class,'footer')]//span[contains(text(),'Xác nhận')]"; 
+	
+	public static final String IDNHANVAT_FORM_POPUP_BTT_HUY = "//div[contains(@class,'footer')]//span[contains(text(),'Hủy')]";
+
+	
+	
 }

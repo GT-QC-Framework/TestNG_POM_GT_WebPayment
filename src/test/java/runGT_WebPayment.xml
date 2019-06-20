@@ -5,10 +5,11 @@
 		<parameter name="version" value="74.0.3729.6" />
 		<parameter name="url" value="https://pay.zing.vn" />
 		<classes>
-		    
+
 			<class name="com.payzing.testcase.LoginScript" />
 			<class name="com.payzing.testcase.HomePageScript" />
-<!-- 			<class name="com.bankguru.testcase.EditCustomerScript" /> -->
+			<class name="com.payzing.testcase.HomePageScript_Only_One" />
+			<class name="com.payzing.testcase.HomePageScript_Game_Convert" />
 
 		</classes>
 	</test>

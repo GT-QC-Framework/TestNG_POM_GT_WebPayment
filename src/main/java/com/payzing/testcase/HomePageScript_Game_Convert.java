@@ -12,17 +12,15 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.payzing.actions.HomePage;
 import com.payzing.actions.LogInPage;
-import com.payzing.ui.HomePageUI;
 
 import CommonPage.CommonTestcase;
 
-public class HomePageScript extends CommonTestcase {
+public class HomePageScript_Game_Convert extends CommonTestcase {
 
 	WebDriver driver;
 
@@ -36,7 +34,7 @@ public class HomePageScript extends CommonTestcase {
 
 	public void beforeClass(String browser, String version, String url) throws InterruptedException {
 
-		inititalReport("Nhutbm_Webpay_SelectPack_07062019.html");
+		inititalReport("Nhutbm_Webpay_Convert_10062019.html");
 
 		driver = openMultiBrowser(browser, version, url);
 
@@ -44,7 +42,7 @@ public class HomePageScript extends CommonTestcase {
 
 		loginPage.openUrl("https://pay.zing.vn/");
 
-		loginPage.inputTXT_TIMKIEMGAME("mu strongest");
+		loginPage.inputTXT_TIMKIEMGAME("crossfire");
 
 		Thread.sleep(3000);
 
@@ -61,58 +59,49 @@ public class HomePageScript extends CommonTestcase {
 //		verifyEqual(homePage.getText_Title_Game(), "Võ Lâm Truyền Kỳ Mobile");
 
 		// get all Selector
-		List<WebElement> list = driver.findElements(By.xpath("//div[contains(@class,'am-selected am-dropdown')]"));
-		WebElement eleCumMayChu = null;
-		WebElement eleMayChu = null;
-		WebElement eleNhanVat = null;
 
-		if (list.size() == 3) {
-			eleCumMayChu = list.get(0);
-			eleMayChu = list.get(1);
-			eleNhanVat = list.get(2);
-		} else if (list.size() == 2) {
-			eleMayChu = list.get(0);
-			eleNhanVat = list.get(1);
-		} else {
-			eleNhanVat = list.get(0);
-		}
-
-		if (eleCumMayChu != null) {
-			homePage.clickDropDown_CumMayChu(eleCumMayChu);
-			Thread.sleep(500);
-			String locator = String.format(HomePageUI.LIST_ITEM_CUMMAYCHU, "Cụm máy chủ 1 - 10");
-			homePage.selectDropdown_CumMayChu(eleCumMayChu, locator);
-		}
-
-		Thread.sleep(1000);
-
-		if (eleMayChu != null) {
-			homePage.clickDropDown_MayChu(eleMayChu);
-			Thread.sleep(500);
-			String locator = String.format(HomePageUI.LIST_ITEM_MAYCHU, "MUS30");
-			homePage.selectDropdown_MayChu(eleMayChu, locator);
-		}
-
-		Thread.sleep(2000);
-
-		if (eleNhanVat != null) {
-
-			homePage.clickDropDown_NhanVat(eleNhanVat);
-			Thread.sleep(500);
-			String locator = String.format(HomePageUI.LIST_ITEM_NHANVAT, "GiinArcher | Level: 427");
-			homePage.selectDropdown_NhanVat(eleNhanVat, locator);
-
-		}
-
-		Thread.sleep(2000);
-
-		homePage.clickBTT_XacNhan();
-
-		homePage.clickPOPUP_XacNhan();
+		/*
+		 * List<WebElement> list = driver.findElements(By.
+		 * xpath("//div[contains(@class,'am-selected am-dropdown')]")); WebElement
+		 * eleCumMayChu = null; WebElement eleMayChu = null; WebElement eleNhanVat =
+		 * null;
+		 * 
+		 * if (list.size() == 3) { eleCumMayChu = list.get(0); eleMayChu = list.get(1);
+		 * eleNhanVat = list.get(2); } else if (list.size() == 2) { eleMayChu =
+		 * list.get(0); eleNhanVat = list.get(1); } else { eleNhanVat = list.get(0); }
+		 * 
+		 * if (eleCumMayChu != null) { homePage.clickDropDown_CumMayChu(eleCumMayChu);
+		 * Thread.sleep(500); String locator =
+		 * String.format(HomePageUI.LIST_ITEM_CUMMAYCHU, "Cụm máy chủ 1 - 10");
+		 * homePage.selectDropdown_CumMayChu(eleCumMayChu, locator); }
+		 * 
+		 * Thread.sleep(1000);
+		 * 
+		 * if (eleMayChu != null) { homePage.clickDropDown_MayChu(eleMayChu);
+		 * Thread.sleep(500); String locator =
+		 * String.format(HomePageUI.LIST_ITEM_MAYCHU, "MUS30");
+		 * homePage.selectDropdown_MayChu(eleMayChu, locator); }
+		 * 
+		 * Thread.sleep(2000);
+		 * 
+		 * if (eleNhanVat != null) {
+		 * 
+		 * homePage.clickDropDown_NhanVat(eleNhanVat); Thread.sleep(500); String locator
+		 * = String.format(HomePageUI.LIST_ITEM_NHANVAT, "GiinArcher | Level: 426");
+		 * homePage.selectDropdown_NhanVat(eleNhanVat, locator);
+		 * 
+		 * }
+		 * 
+		 * Thread.sleep(2000);
+		 * 
+		 * homePage.clickBTT_XacNhan();
+		 * 
+		 * homePage.clickPOPUP_XacNhan();
+		 */
 
 	}
 
-	@BeforeMethod
+//	@BeforeMethod
 
 	public void beforeMethod() throws InterruptedException {
 
@@ -147,9 +136,8 @@ public class HomePageScript extends CommonTestcase {
 			if (dataInput != null && dataInput != "") {
 				limitPrice = Long.valueOf(dataInput);
 			}
-		} while (limitPrice < 50000);// ngc lai so can
-		
-		
+		} while (limitPrice < 50000 && limitPrice >= 5000000);// ngc lai so can
+
 //		System.out.println(limitPrice + " - " + lstPkgId.get(rndPkgId));
 
 		homePage.click("//img[@id='img" + lstPkgId.get(rndPkgId).substring(4) + "']");
@@ -163,13 +151,67 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_01_ZaloPay_Verify_display_QR_code() throws InterruptedException {
+	public void testcase_01_ZaloPay_Verify_message_when_delete_price() throws InterruptedException {
 
 //		homePage.clickPackage50();
 
-		logTestCase("ZaloPay: Verify display QR code");
+		logTestCase("ZaloPay: Verify message when delete price");
 
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_ZaloPay();
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+	}
+
+	@Test
+	public void testcase_02_ZaloPay_Verify_message_when_input_invalid_price() throws InterruptedException {
+
+		logTestCase("ZaloPay: Verify message when input invalid price");
+
+		Thread.sleep(1000);
+
+		homePage.inputSoTienThanhToan_TXT_ZaloPay("4900");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_ZaloPay();
+
+		homePage.inputSoTienThanhToan_TXT_ZaloPay("5100");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_ZaloPay();
+
+		homePage.inputSoTienThanhToan_TXT_ZaloPay("99999");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_ZaloPay();
+
+		homePage.inputSoTienThanhToan_TXT_ZaloPay("19876500");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+	}
+
+	@Test
+	public void testcase_03_ZaloPay_Verify_message_when_input_valid_price() throws InterruptedException {
+		
+		logTestCase("ZaloPay: Verify message when input valid price");
+		
 		System.out.println("----ZaloPay-----");
+
+		homePage.clearSoTienThanhToan_TXT_ZaloPay();
+
+		homePage.inputSoTienThanhToan_TXT_ZaloPay("100000");
+		
+		Thread.sleep(1000);
 
 		homePage.clickXacNhan_ZaloPay();
 
@@ -184,23 +226,26 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_02_ZingCard_Verify_display_form_input_information_card() throws InterruptedException {
+	public void testcase_04_ZingCard_Verify_display_form_input_information_card() throws InterruptedException {
 
 		logTestCase("ZingID: Verify display form input information card");
 
 		System.out.println("-----ZingCard-----");
+
+		Thread.sleep(1000);
 
 		homePage.clickPhuongThuc_ZingCard();
 
 	}
 
 	@Test
-	public void testcase_03_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card()
+	public void testcase_05_ZingCard_Verify_display_message_when_dont_input_Seri_and_Pin_card()
 			throws InterruptedException {
 
 		logTestCase("ZingID: Verify display message when don't input Seri + Pin card ");
 
-		homePage.clickPhuongThuc_ZingCard();
+		Thread.sleep(1000);
+
 
 		homePage.clickXacNhan_ZingCard();
 
@@ -210,11 +255,12 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_04_ZingCard_Verify_display_message_when_only_input_Seri() throws InterruptedException {
+	public void testcase_06_ZingCard_Verify_display_message_when_only_input_Seri() throws InterruptedException {
 
 		logTestCase("ZingID: Verify display message when only input Seri");
 
-		homePage.clickPhuongThuc_ZingCard();
+		Thread.sleep(1000);
+
 
 		homePage.inputSoSeri_ZingCard("Why did i fall in love with you");
 
@@ -229,11 +275,15 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_05_ZingCard_Verify_display_message_when_only_input_Pin() throws InterruptedException {
+	public void testcase_07_ZingCard_Verify_display_message_when_only_input_Pin() throws InterruptedException {
 
 		logTestCase("ZingID: Verify display message when only input Pin");
 
-		homePage.clickPhuongThuc_ZingCard();
+		Thread.sleep(1000);
+
+		homePage.cleanSoSeri_ZingCard();
+
+		Thread.sleep(1000);
 
 		homePage.inputMaThe_ZingCard("Toki wo tomete");
 
@@ -246,15 +296,17 @@ public class HomePageScript extends CommonTestcase {
 		System.out.println("	- Chi nhap Pin Card: " + homePage.getText_Error_ZingCard());
 
 	}
-
+//
 	@Test
-	public void testcase_06_ZingCard_Verify_display_message_when_input_card_invalid() throws InterruptedException {
+	public void testcase_08_ZingCard_Verify_display_message_when_input_card_invalid() throws InterruptedException {
 
 		logTestCase("ZingID: Verify display message when input card invalid");
 
-		homePage.clickPhuongThuc_ZingCard();
+		Thread.sleep(1000);
 
-		Thread.sleep(1500);
+		homePage.cleanSoSeri_ZingCard();
+
+		homePage.cleanMaThe_ZingCard();
 
 		homePage.inputSoSeri_ZingCard("yc0053605711");
 
@@ -269,15 +321,18 @@ public class HomePageScript extends CommonTestcase {
 		System.out.println("	- Nhap sai thong tin the: " + homePage.getText_Error_ZingCard());
 
 	}
-
+//
 	@Test
-	public void testcase_07_ZingCard_Verify_display_message_when_input_card_had_used() throws InterruptedException {
+	public void testcase_09_ZingCard_Verify_display_message_when_input_card_had_used() throws InterruptedException {
 
 		logTestCase("ZingID: Verify display message when input card had used");
 
-		homePage.clickPhuongThuc_ZingCard();
+		Thread.sleep(1000);
 
-		Thread.sleep(1500);
+
+		homePage.cleanSoSeri_ZingCard();
+
+		homePage.cleanMaThe_ZingCard();
 
 		homePage.inputSoSeri_ZingCard("yc0053605718");
 
@@ -294,33 +349,72 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_08_ATM_Transfer_Napas() throws InterruptedException {
+	public void testcase_10_ATM_Verify_message_when_delete_price() throws InterruptedException {
 
-		logTestCase("ATM > Napas: Verify display form input information card");
+		logTestCase("ATM: Verify message when delete price");
+
+		homePage.clickPhuongThuc_ATM();
+
+		homePage.clearSoTienThanhToan_TXT_ATM();
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+	}
+
+	@Test
+	public void testcase_11_ATM_Verify_message_when_input_invalid_price() throws InterruptedException {
+
+		logTestCase("ATM: Verify message when input invalid price");
+
+		homePage.inputSoTienThanhToan_TXT_ATM("49000");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		homePage.clearSoTienThanhToan_TXT_ATM();
+
+		Thread.sleep(1000);
+
+		homePage.inputSoTienThanhToan_TXT_ATM("51000");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		homePage.clearSoTienThanhToan_TXT_ATM();
+
+		Thread.sleep(1000);
+
+		homePage.inputSoTienThanhToan_TXT_ATM("99999");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		homePage.clearSoTienThanhToan_TXT_ATM();
+
+		Thread.sleep(1000);
+
+		homePage.inputSoTienThanhToan_TXT_ATM("19785000");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+	}
+//
+//
+//
+	@Test
+	public void testcase_12_ATM_Transfer_Napas() throws InterruptedException {
+
+		logTestCase("ATM > Napas: Verify display message when cancel payment");
 
 		System.out.println("-----ATM-----");
 
 		System.out.println("	- Direct sang Napas ");
 
-		homePage.clickPhuongThuc_ATM();
+		homePage.clearSoTienThanhToan_TXT_ATM();
+
+		Thread.sleep(1000);
+
+		homePage.inputSoTienThanhToan_TXT_ATM("150000");
 
 		homePage.click_Bank_Tranfers_NAPAS();
-
-		homePage.clickXacNhan_ATM();
-
-		Thread.sleep(6000);
-
-		verifyEqual(homePage.getTitle_Bank_Tranfers_NAPAS(), "Cổng thanh toán NAPAS");
-	}
-
-	@Test
-	public void testcase_09_ATM_Transfer_Napas_Verify_display_message_when_dont_input_information_card() throws InterruptedException {
-
-		logTestCase("ATM > Napas: Verify display message when dont input information card");
-
-		homePage.clickPhuongThuc_ATM();
-
-		homePage.click_Bank_Tranfers_NAPAS();
+		
+		Thread.sleep(1000);
 
 		homePage.clickXacNhan_ATM();
 
@@ -328,30 +422,6 @@ public class HomePageScript extends CommonTestcase {
 
 		verifyEqual(homePage.getTitle_Bank_Tranfers_NAPAS(), "Cổng thanh toán NAPAS");
 
-		homePage.clickBank_Tranfers_NAPAS_BTT_ThanhToan();
-
-		verifyEqual(homePage.getTextBank_Tranfers_NAPAS_Mess(), "  Quý khách vui lòng nhập đầy đủ thông tin.");
-
-		System.out
-				.println("		+ De trong khong nhap thong tin the: " + homePage.getTextBank_Tranfers_NAPAS_Mess());
-
-	}
-
-	@Test
-	public void testcase_10_ATM_Transfer_Napas() throws InterruptedException {
-		
-		logTestCase("ATM > Napas: Verify display message when cancel payment");
-		
-		homePage.clickPhuongThuc_ATM();
-
-		homePage.click_Bank_Tranfers_NAPAS();
-
-		homePage.clickXacNhan_ATM();
-
-		Thread.sleep(6000);
-
-		verifyEqual(homePage.getTitle_Bank_Tranfers_NAPAS(), "Cổng thanh toán NAPAS");
-		
 		homePage.inputBank_Tranfers_NAPAS_TenChuThe("kim jae joong");
 
 		homePage.inputBank_Tranfers_NAPAS_SoThe("1176217");
@@ -381,16 +451,22 @@ public class HomePageScript extends CommonTestcase {
 		homePage.clickTiepTucThanhToan();
 	}
 
-
-
 	@Test
-	public void testcase_11_ATM_Transfer_BANK_WEB() throws InterruptedException {
+	public void testcase_13_ATM_Transfer_BANK_WEB() throws InterruptedException {
 		
 		logTestCase("ATM > Bank Web: Verify direct to corresponding with bank had chosen");
 		
 		System.out.println("	- Direct sang bank web ");
 
 		homePage.clickPhuongThuc_ATM();
+		
+		Thread.sleep(1000);
+		
+		homePage.clearSoTienThanhToan_TXT_ATM();
+		
+		homePage.inputSoTienThanhToan_TXT_ATM("990000");
+		
+		Thread.sleep(1000);
 
 		homePage.click_Bank_Tranfers_BANKWEB();
 
@@ -411,39 +487,21 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card() throws InterruptedException {
-		
-		logTestCase("ATM > ZaloPay: Verify display form input infor card");
-
-		System.out.println("	- Direct sang Zalopay Gateway ");
-
-		homePage.clickPhuongThuc_ATM();
-
-		homePage.click_Bank_Tranfers_ZALOPAY();
-
-		homePage.clickXacNhan_ATM();	
-		
-		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon();
-	
-		Thread.sleep(1000);
-       
-		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT();
-
-		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT_QuayVe_BTT();
-		
-		Thread.sleep(1000);
-
-		homePage.clickTiepTucThanhToan();
-	}
-	
-	@Test
-	public void testcase_13_ATM_Transfer_ZaloPay_Verify_display_transactionID() throws InterruptedException {
+	public void testcase_14_ATM_Transfer_ZaloPay_Verify_display_transactionID() throws InterruptedException {
 
 		logTestCase("ATM > ZaloPay: Verify display transactionId when cancel");
 	
 		homePage.clickPhuongThuc_ATM();
-
+		
+		Thread.sleep(1000);
+		
 		homePage.click_Bank_Tranfers_ZALOPAY();
+		
+		homePage.clearSoTienThanhToan_TXT_ATM();
+		
+		homePage.inputSoTienThanhToan_TXT_ATM("15000000");
+		
+		Thread.sleep(1000);
 
 		homePage.clickXacNhan_ATM();
 		
@@ -479,12 +537,14 @@ public class HomePageScript extends CommonTestcase {
 		Thread.sleep(2000);
 
 		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon();
+		
+		Thread.sleep(2000);
 
 		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_Huy_BTT();
 
-		Thread.sleep(2000);
-
 		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon();
+		
+		Thread.sleep(2000);
 
 		homePage.clickBank_Tranfers_ZALOPAY_Huy_Icon_PopUp_XacNhan_BTT();
 
@@ -500,16 +560,77 @@ public class HomePageScript extends CommonTestcase {
 
 		homePage.clickTiepTucThanhToan();
 	}
-
+//
 	@Test
-	public void testcase_14_Credit_Card() throws InterruptedException {
-		
-		logTestCase("CreditCard: Verify display form input info card");
-		
+	public void testcase_15_Credit_Card_Verify_message_when_delete_price() throws InterruptedException {
+
+		logTestCase("CreditCard: Verify message when delete price");
+
 		System.out.println("-----Credit Card-----");
 
 		homePage.clickPhuongThuc_CreditCard();
 
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+	}
+
+	@Test
+	public void testcase_16_Credit_Card_Verify_message_when_input_invalid_price() throws InterruptedException {
+
+		logTestCase("CreditCard: Verify message when input invalid price");
+
+		Thread.sleep(2000);
+
+		homePage.inputSoTienThanhToan_TXT_CreditCard("49000");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		homePage.inputSoTienThanhToan_TXT_CreditCard("51000");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		homePage.inputSoTienThanhToan_TXT_CreditCard("99999");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		homePage.inputSoTienThanhToan_TXT_CreditCard("12345000");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+		Thread.sleep(1000);
+
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		homePage.inputSoTienThanhToan_TXT_CreditCard("19999999");
+
+		verifyEqual(homePage.getText_Error_ZingCard(), "Số tiền thanh toán không hợp lệ.");
+
+	}
+
+	@Test
+	public void testcase_17_Credit_Card() throws InterruptedException {
+		
+		logTestCase("CreditCard: Verify message when input valid price");
+		
+		homePage.clearSoTienThanhToan_TXT_CreditCard();
+
+		homePage.inputSoTienThanhToan_TXT_CreditCard("2500000");
+		
+		Thread.sleep(1000);
+		
 		homePage.clickXacNhan_CreditCard();
 
 		homePage.clickCreditCard_FORM_HUY_ICON();
@@ -544,15 +665,13 @@ public class HomePageScript extends CommonTestcase {
 	}
 
 	@Test
-	public void testcase_15_SMS() throws InterruptedException {
+	public void testcase_18_SMS() throws InterruptedException {
 		
 		logTestCase("SMS: Verify display syntax");
 
 		System.out.println("-----SMS-----");
 
-		homePage.clickPhuongThuc_SMS_HREF();
-
-		homePage.clickSoTienThanhToan_DropDown_SMS();
+		homePage.clickPhuongThuc_SMS_Game_Convert();
 
 		Thread.sleep(2000);
 

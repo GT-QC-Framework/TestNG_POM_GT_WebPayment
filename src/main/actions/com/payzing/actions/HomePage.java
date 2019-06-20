@@ -74,6 +74,19 @@ public class HomePage extends commonFunction {
 		click(HomePageUI.POPUP_XACNHAN_PACKAGE);
 	}
 	
+	public void inputSoTienThanhToan_TXT_ZaloPay(String value)
+	{
+		waitVisible(HomePageUI.OPTION_ZaloPay_SOTIENTHANHTOAN_TXT);
+		input(HomePageUI.OPTION_ZaloPay_SOTIENTHANHTOAN_TXT, value);
+	}
+	
+	public void clearSoTienThanhToan_TXT_ZaloPay()
+	{
+		waitVisible(HomePageUI.OPTION_ZaloPay_SOTIENTHANHTOAN_TXT);
+		clear(HomePageUI.OPTION_ZaloPay_SOTIENTHANHTOAN_TXT);
+	}
+	
+	
 	public void clickXacNhan_ZaloPay()
 	{
 		waitVisible(HomePageUI.ZALOPAY_XACNHAN_BTT);
@@ -151,7 +164,19 @@ public class HomePage extends commonFunction {
 	{
 		waitVisible(HomePageUI.OPTION_ATM);
 		click(HomePageUI.OPTION_ATM);
-	} 
+	}
+	
+	public void inputSoTienThanhToan_TXT_ATM(String value)
+	{
+		waitVisible(HomePageUI.OPTION_ATM_SOTIENTHANHTOAN_TXT);
+		input(HomePageUI.OPTION_ATM_SOTIENTHANHTOAN_TXT, value);
+	}
+	
+	public void clearSoTienThanhToan_TXT_ATM()
+	{
+		waitVisible(HomePageUI.OPTION_ATM_SOTIENTHANHTOAN_TXT);
+		clear(HomePageUI.OPTION_ATM_SOTIENTHANHTOAN_TXT);
+	}
 	
 	public void clickXacNhan_ATM()
 	{
@@ -323,6 +348,18 @@ public class HomePage extends commonFunction {
 		click(HomePageUI.CREDIT_XACNHAN_BTT);
 	}
 	
+	public void inputSoTienThanhToan_TXT_CreditCard(String value)
+	{
+		waitVisible(HomePageUI.OPTION_CREDITCARD_SOTIENTHANHTOAN_TXT);
+		input(HomePageUI.OPTION_CREDITCARD_SOTIENTHANHTOAN_TXT, value);
+	}
+	
+	public void clearSoTienThanhToan_TXT_CreditCard()
+	{
+		waitVisible(HomePageUI.OPTION_CREDITCARD_SOTIENTHANHTOAN_TXT);
+		clear(HomePageUI.OPTION_CREDITCARD_SOTIENTHANHTOAN_TXT);
+	}
+	
 	public void inputCreditCard_FORM_SoThe_TXT(String value)
 	{
 		waitVisible(HomePageUI.CREDIT_FORM_SOTHE_TXT);
@@ -377,5 +414,38 @@ public class HomePage extends commonFunction {
 		return getText(HomePageUI.TRANGTHAIGIAODICH_LBL);
 	}
 	
+	
+	public void clickPhuongThuc_SMS_HREF()
+	{
+		waitVisible(HomePageUI.HREF_NAPBANGSMS);
+		click(HomePageUI.HREF_NAPBANGSMS);
+	} 
+	
+	public void clickPhuongThuc_SMS_Game_Convert()
+	{
+		waitVisible(HomePageUI.OPTION_SMS_GAME_CONVERT);
+		click(HomePageUI.OPTION_SMS_GAME_CONVERT);
+	} 
+	
+	
+	public void clickSoTienThanhToan_DropDown_SMS()
+	{
+		waitVisible(HomePageUI.SMS_DROPDOWN_SOTIENTHANHTOAN);
+		click(HomePageUI.SMS_DROPDOWN_SOTIENTHANHTOAN);
+		waitVisible(HomePageUI.SMS_DROPDOWN_OPTION_SOTIENTHANHTOAN);
+		clickRandomOptionInCombobox(HomePageUI.SMS_DROPDOWN_OPTION_SOTIENTHANHTOAN);
+	}
+	
+	public void clickXacNhan_SMS()
+	{
+		waitVisible(HomePageUI.SMS_BTT_XACNHAN);
+		click(HomePageUI.SMS_BTT_XACNHAN);
+	}
+	
+	public String getText_MaGiaoDich_SMS()
+	{
+		waitVisible(HomePageUI.MAGIAODICH_LBL);
+		return getText(HomePageUI.MAGIAODICH_LBL);
+	}
 	
 }

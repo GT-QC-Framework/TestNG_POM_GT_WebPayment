@@ -9,12 +9,57 @@
     <parameter name="version" value="74.0.3729.6"/>
     <parameter name="url" value="https://pay.zing.vn"/>
     <classes>
+      <class name="com.payzing.testcase.HomePageScript_Only_One">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card"/>
+          <include name="testcase_10_ATM_Transfer_Napas"/>
+          <include name="beforeClass"/>
+          <include name="testcase_11_ATM_Transfer_BANK_WEB"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript_Only_One -->
+      <class name="com.payzing.testcase.HomePageScript_Game_Convert">
+        <methods>
+          <include name="testcase_17_Credit_Card"/>
+          <include name="testcase_16_Credit_Card_Verify_message_when_input_invalid_price"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="testcase_15_Credit_Card_Verify_message_when_delete_price"/>
+          <include name="testcase_18_SMS"/>
+          <include name="afterMethod"/>
+          <include name="testcase_13_ATM_Transfer_BANK_WEB"/>
+          <include name="testcase_14_ATM_Transfer_ZaloPay_Verify_display_transactionID"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.HomePageScript_Game_Convert -->
+      <class name="com.payzing.testcase.LoginScript">
+        <methods>
+          <include name="afterClass"/>
+          <include name="testcase_01_Dont_input_username_password"/>
+          <include name="testcase_07_QuickLogin_Dont_type_Username_and_password"/>
+          <include name="testcase_10_QuickLogin_Login_account_invalid"/>
+          <include name="testcase_05_Login_account_ZingID_success"/>
+          <include name="afterMethod"/>
+          <include name="testcase_03_Only_Type_Input_Password"/>
+          <include name="testcase_11_QuickLogin_Login_success"/>
+          <include name="testcase_06_select_quicklogin"/>
+          <include name="beforeClass"/>
+          <include name="testcase_08_QuickLogin_Only_type_Username"/>
+          <include name="testcase_02_Only_Type_Input_UserName"/>
+          <include name="testcase_09_QuickLogin_Only_type_Password"/>
+          <include name="testcase_04_Type_Invalid_Account"/>
+        </methods>
+      </class> <!-- com.payzing.testcase.LoginScript -->
       <class name="com.payzing.testcase.HomePageScript">
         <methods>
+          <include name="testcase_11_ATM_Transfer_BANK_WEB"/>
+          <include name="afterMethod"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
+          <include name="testcase_12_ATM_Transfer_ZaloPay_Verify_display_form_input_infor_card"/>
           <include name="afterClass"/>
-          <include name="testcase_02_ZingCard"/>
+          <include name="testcase_07_ZingCard_Verify_display_message_when_input_card_had_used"/>
         </methods>
       </class> <!-- com.payzing.testcase.HomePageScript -->
     </classes>
